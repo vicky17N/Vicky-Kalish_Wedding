@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Vicky's Wedding: A beautiful celebration of love. Join us!" />
+    <meta name="keywords" content="wedding, celebration, Vicky, portfolio" />
+    <meta name="author" content="Vicky's Name" />
+    <title>Vicky & Kalishwari's Wedding</title>
+    <meta name="theme-color" content="#ff0873">
+    <meta name="msapplication-TileColor" content="#ff0873">
+    <meta name="msapplication-TileImage" content="https://picsum.photos/id/103/300/400">
+    
+    <link rel="manifest" href="/manifest.json">
+        <!-- For iOS Home Screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Vicky & Kaliswari Wedding">
+    <link rel="apple-touch-icon" href="./img/frame.png">
+
+    <!-- For Android -->
+    <meta name="theme-color" content="#0d6efd"> <!-- Match your brand color -->
+
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Vicky ❤️ Kaliswari Wedding Invitation">
+    <meta property="og:description" content="You're invited to celebrate the wedding of Vicky & Kaliswari! Join us on our special day.">
+    <meta property="og:image" content="https://vicky17n.github.io/Vicky-Kalish_Wedding/images/cover.jpg"> <!-- Replace with actual image path -->
+    <meta property="og:url" content="https://vicky17n.github.io/Vicky-Kalish_Wedding/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vicky & Kalish Wedding">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vicky ❤️ Kaliswari Wedding Invitation">
+    <meta name="twitter:description" content="You're invited to celebrate the wedding of Vicky & Kaliswari! Join us on our special day.">
+    <meta name="twitter:image" content="https://vicky17n.github.io/Vicky-Kalish_Wedding/images/cover.jpg">
+
+    <!-- Favicon Links -->
+    <link rel="icon" href="./img/frame.png" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/frame.png">
+
+    <!-- Google Fonts and CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="./style/sacramento_work_sans.css" rel="stylesheet" />
+
+    <!-- Bootstrap and Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style/simplyCountdown.theme.default.css" />
+    <link rel="stylesheet" href="./style/bootstrap/css/bootstrap-icon-1.10.5.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- Loader Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet" />
+
+    <style>
+      .blurred {
+        filter: blur(10px);
+        pointer-events: none; /* Disable clicks when blurred */
+        transition: filter 0.5s ease; /* Smooth blur transition */
+          }
+    </style>
+
+    <style>
+        
+      .chevron-down {
+          font-size: 40px;
+          color: #ff0873;
+          transform: rotate(90deg); /* rotate "»" to point downward */
+          animation: bounce 1s infinite;
+        }
+    
+        @keyframes bounce {
+          0%, 100% {
+            transform: rotate(90deg) translateY(0);
+          }
+          50% {
+            transform: rotate(90deg) translateY(10px);
+          }
+        }
+       </style>
+</head>
+
+
+  <body id='page'>
+  <!-- Loader Container -->
+  <div id="wedding-loader">
+    <div class="message">Welcome to Our Special Day</div>
+    <i class="fa fa-heart ms-1 heart-icon"></i>
+    <div class="date">Vigneshwaran&nbsp; & Kalishwari</div>
+    <div id="petals-container"></div>
+
+    <audio id="love-music" autoplay loop>
+      <source src="https://embed.music.apple.com/in/song/pookkal-pookkum-instrumental-violin/1748887404" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    
+  </div>
+  <!-- Loader end -->
+      <!-- Back to Top Button -->
+
+
+    <div id="leaves">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i> <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i> 
+    </div>
+  
+    
+
+  <!-- home section -->
+  <section 
+      id="hero"
+      class="hero w-100 h-100 p-3 margin-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h4>Dear Mr./Mrs./Family,</h4>
+        <h1 class="text-center"><span class="Vicky">Vigneshwaran</span> & <span class="Kalishwari">Kalishwari</span></h1>
+        <p>Will hold a wedding reception in:</p><br>
+        <div id="count" class="simply-countdown text-center"></div>
+        <div id="notification" style="display: none;">
+          <span id="notificationMessage"></span>
+          <button id="dismissButton">X</button>
+        </div>
+        <a
+          href="#home"
+          class="btn btn-lg mt-4"
+          onclick="return enableScroll()"
+          id="viewInvitationButton"
+          >View Invitation</a
+        >&nbsp;&nbsp;
+        <a href="#" class="btn btn-lg mt-4" id="addToGoogleCalendarbtn" onclick="addToGoogleCalendar()">Add To Calendar</a>
+        <div class="chevron-down">&raquo;</div>
+      </main>
+    </section>
+  <!-- home section end -->
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand bg-transparent sticky-top mynavbar">
+  <div class="container">
+    <!-- Brand and Heart Icon -->
+    <a class="navbar-brand" href="#">
+      <span class="Vicky">Vigneshwaran</span> 
+      <i class="fa fa-heart ms-1 heart-icon"></i>&nbsp;
+      <span class="Kalishwari">Kalishwari</span>
+    </a>
+  </div>
+</nav>
+
+<!-- Navbar end -->
+
+<!-- wedding ceremony -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Wedding Ceremony</h2>
+            <h3>Held on Friday, June 13, 2025</h3><br>
+              <h3></h3>
+            <p>
+              Therefore, we sincerely invite you to attend our wedding ceremony.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row couple">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-8 text-end">
+              <h3>Vigneshwaran</h3>
+              <p>
+                We wholeheartedly invite you to celebrate the joyful union of our beloved son as he embarks on a remarkable journey of love, togetherness, companionship, and wedded bliss.              </p>
+              <p>
+                Son of Mr. Nagarethinam <br />
+                and <br />
+                Mrs. Gomathi
+                <br>Manikandan (Younger Brother) <br>
+                Thilagavthi (Younger Sister)
+              </p>
+            </div>
+            <div class="col-4">
+              <img
+                id="Vicky"  loading="lazy"
+                src="./img/Vigneshwaran.jpg"
+                alt="Vigneshwaran"
+                class="img-responsive rounded-circle"
+              />
+            </div>
+          </div>
+        </div>
+
+        <span class="heart"> <i class="fa fa-heart heart-icon"></i> </span>
+
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-4">
+              <img
+              id="Kalishwari" loading="lazy"
+                src="./img/Kalishwari.jpg"
+                alt="Fiancee"
+                class="img-responsive rounded-circle"
+              />
+            </div>
+            <div class="col-8 text-start">
+              <h3>Kalishwari</h3>
+              <p>
+                We wholeheartedly invite you to celebrate the joyful union of our beloved daughter as she embarks on a remarkable journey of love, togetherness, companionship, and wedded bliss.
+              </p>
+              <p>
+                Daughter of Mr. Mutthazhagu <br />
+                and <br />
+                Mrs. Indhira
+                <br>Kaviya (Younger Sister) <br>
+                Kayathri (Younger Sister)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- wedding ceremony end -->
+
+<!-- info section -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Event Information</h2>
+            <p class="alamat">
+              Address: Viralimalai Murugan Temple, Pudukkottai.
+            </p>
+            <a
+              href="https://maps.app.goo.gl/dti4i8BGv8xKbWLZA"
+              target="_blank"
+              class="btn btn-light btn-sm my-4"
+              >Click to open map</a>
+              <br>
+            <span>( or )</span>
+            <br>
+            <p>Scan the QR code to open the map:</p>
+            <img class="img-fluid" src="./img/frame.png" loading="lazy" alt="QR Code">
+
+            <br><br>
+            <p class="description" style="color: white;">
+              Please ensure you have the correct address and date. If you arrive
+              at the destination and there are no signs of a wedding ceremony,
+              you may have the wrong schedule or place.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-5 col-10">
+          <div class="card text-center text-bg-light mb-5">
+            <div class="card-header">Wedding Ceremony</div>
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <i class="bi bi-clock d-block"></i>
+                  <span>09:00 AM - 10:00 AM</span>
+                </div>
+                <div class="col-md-6">
+                  <i class="bi bi-calendar-event d-block"></i>
+                  <span>Friday, June 13, 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10">
+          <div class="card text-center text-bg-light">
+            <div class="card-header">Reception</div>
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <i class="bi bi-clock d-block"></i>
+                  <span>10:00 AM - Until Finished</span>
+                </div>
+                <div class="col-md-6">
+                  <i class="bi bi-calendar-event d-block"></i>
+                  <span>June, June 13, 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- info section end -->
+
+  <!-- story section -->
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>How did our love blossom?</span>
+            <h2>Our Story</h2>
+            <p>
+                As blossoms bloom beneath the sun,Together, we are two souls as one.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/300/300)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>First Met</h3>
+                    <span>Oct  02, 2023</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      In that fleeting glance, our worlds aligned,
+                      Two hearts entwined, a love undefined.
+                      A spark ignited, a story began,
+                      Forever bound since that first meeting span.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/300/301)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>First Dating</h3>
+                    <span>Oct  02, 2023</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Beneath the stars, we shared a smile,
+                      Each word lingered, holding time awhile.
+                      In gentle whispers, a bond was made,
+                      A chapter of love, softly displayed.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- Add more timeline items as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- story section end -->
+
+<!-- gallery section -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memories of Our Story</span>
+            <h2>Photo Gallery</h2>
+            <p>
+              In every glance, a tale unfolds,
+              Each laugh and tear, a treasure we hold
+            </p>
+          </div>
+        </div>
+        
+        <!-- Flexbox Grid Row -->
+        <div class="row">
+          <div class="col">
+            <a href="#!" data-toggle="lightbox">
+              <video class="video" src="./img/video.mp4" ></video>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#!" data-toggle="lightbox">
+              <img loading="lazy" src="https://picsum.photos/id/101/300/400" alt="Image 2" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#!" data-toggle="lightbox">
+              <img loading="lazy" src="https://picsum.photos/id/102/300/400" alt="Image 3" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#!" data-toggle="lightbox">
+              <img loading="lazy" src="https://picsum.photos/id/103/300/400" alt="Image 4" />
+            </a>
+          </div>
+          <!-- Add more columns as needed -->
+        </div>
+      </div>
+    </section>
+  <!-- gallery section end -->
+
+  <!-- Attendance section -->
+  <section id="rsvp" class="rsvp py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2 class="display-5">Confirm Your Attendance</h2>
+          <p class="lead">
+            Please fill out the form below to confirm your attendance!
+          </p>
+        </div>
+      </div>
+  
+      <div class="row justify-content-center mt-4">
+        <form
+          id="my-form"
+          class="d-grid gap-3 justify-content-center"
+          method="POST"
+          action="https://formspree.io/f/xeoayqej"
+        >
+          <!-- Name Field -->
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-person"></i></span>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="Name"
+              placeholder="Enter your name"
+            />
+          </div>
+  
+          <!-- Number of Attendees Field -->
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-people"></i></span>
+            <input
+              type="number"
+              class="form-control"
+              name="attendees"
+              id="Members"
+              min="1"
+              max="5"
+              placeholder="Maximum 5 Members"
+            />
+          </div>
+  
+          <!-- Confirmation Field -->
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-check-circle"></i></span>
+            <select name="status" id="status" class="form-select">
+              <option value="" disabled selected>Select one</option>
+              <option value="Not Attending">Not Attending</option>
+              <option value="Attending">Attending</option>
+            </select>
+          </div>
+  
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg w-100 mt-3">
+              <i class="bi bi-send"></i> Submit
+            </button>
+          </div>
+        </form>
+      </div>
+  
+      <!-- Success/Error Message -->
+      <div id="form-message" class="text-center mt-4"></div>
+    </div>
+    <div id="animated-alert" class="alert-box" style="display: none;"></div>
+  </section>
+  
+  <!-- Attendance section end   -->
+
+
+    
+<!-- map section -->
+<section style="padding: 40px; background: #f9f9f9; text-align: center;">
+  <div style="position: relative; display: inline-block; width: 100%; max-width: 900px; overflow: hidden; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); animation: fadeIn 2s ease-out;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3921.71844118305!2d78.539931!3d10.6011727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa64b85b3063ab%3A0x746d7dff157a855b!2sArulmigu%20Viralimalai%20murugan%20temple!5e0!3m2!1sen!2sin!4v1745324375196!5m2!1sen!2sin" 
+      width="100%" 
+      height="400" 
+      style="border:0; transition: transform 0.5s ease;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  </div>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    section iframe:hover {
+      transform: scale(1.05);
+    }
+    </style>
+</section>
+  <!-- map section end -->
+
+<!-- footer section  -->
+    <footer class="mt-4">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col text-center">
+            <small class="d-block">
+              2025 - Lifetime 
+              @ All Rights Reserved
+            </small><br>
+            <small class="d-block">
+              Developed By : 
+              <a
+                href="https://www.linkedin.com/in/vigneshwaran-n-96b15b216/"
+                class="text-decoration-none text-white">
+                <i class="fa fa-heart pulse"></i>
+                  Vigneshwaran
+                <i class="fa fa-heart pulse"></i>
+              </a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- footer section end -->
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="./style/bootstrap/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous">
+    </script>
+
+    <!-- Countdown JS -->
+    <script src="./script/simplyCountdown.min.js"></script>
+    <!-- scroll reveal anim -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Custom Scripts -->
+    <script src="script/script.js"></script>
+    <!-- Smooth scroll -->
+    <script src="./script/smooth_scroll.js"></script>
+
+    <script src="https://apis.google.com/js/api.js" ></script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./script/service-worker.js').then(function(registration) {
+          console.log('Service Worker registered with scope:', registration.scope);
+        }).catch(function(error) {
+          console.log('Service Worker registration failed:', error);
+        });
+      }
+    </script>
+    
+
+  </body>
+</html>
