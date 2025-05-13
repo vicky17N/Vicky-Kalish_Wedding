@@ -2,7 +2,7 @@
     "name": "Vicky & Kaliswari Wedding",
     "short_name": "Wedding",
     "description": "You're invited to celebrate the wedding of Vicky & Kaliswari!",
-    "start_url": "./",
+    "start_url": "",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#0d6efd",
