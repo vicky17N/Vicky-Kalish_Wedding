@@ -60,17 +60,17 @@ document.addEventListener("contextmenu", function (event) {
 });
 
 // Disable Developer Tools (F12, Ctrl + Shift + I/J, Ctrl + U)
-// document.addEventListener("keydown", function (event) {
-//     if (
-//         event.keyCode === 123 || // F12
-//         (event.ctrlKey && event.shiftKey && event.key === "I") || // Ctrl + Shift + I
-//         (event.ctrlKey && event.shiftKey && event.key === "J") || // Ctrl + Shift + J
-//         (event.ctrlKey && event.key === "U") // Ctrl + U
-//     ) {
-//         event.preventDefault();
-//         alert("Developer tools are disabled.");
-//     }
-// });
+document.addEventListener("keydown", function (event) {
+    if (
+        event.keyCode === 123 || // F12
+        (event.ctrlKey && event.shiftKey && event.key === "I") || // Ctrl + Shift + I
+        (event.ctrlKey && event.shiftKey && event.key === "J") || // Ctrl + Shift + J
+        (event.ctrlKey && event.key === "U") // Ctrl + U
+    ) {
+        event.preventDefault();
+        alert("Developer tools are disabled.");
+    }
+});
 
 // Disable Print (Ctrl + P)
 document.addEventListener("keydown", function (event) {
