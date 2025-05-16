@@ -511,25 +511,44 @@ window.addEventListener('beforeinstallprompt', (e) => {
   });
 });
 
-// Mouse Animation
-function spark(event) {
-  let i = document.createElement("Cursor");
-      i.style.left = event.pageX + "px";
-      i.style.top = event.pageY + "px";
-      i.style.transform = `scale(${Math.random() * 2 + 1})`;
-      i.style.setProperty("--x", getRandomTransitionValue());
-      i.style.setProperty("--y", getRandomTransitionValue());
+// Spark animation on mouse or touch
+function spark(x, y) {
+  let i = document.createElement("div");
+  i.className = "cursor-spark";
+  i.style.left = x + "px";
+  i.style.top = y + "px";
+  i.style.transform = `scale(${Math.random() * 2 + 1})`;
+  i.style.setProperty("--x", getRandomTransitionValue());
+  i.style.setProperty("--y", getRandomTransitionValue());
 
-      document.body.appendChild(i);
-        setTimeout(() => {
-          document.body.removeChild(i);
-        }, 4000);
-};
+  document.body.appendChild(i);
+  setTimeout(() => {
+    document.body.removeChild(i);
+  }, 4000);
+}
 
 function getRandomTransitionValue() {
   return `${Math.random() * 400 - 200}px`;
 }
 
-document.addEventListener("mousemove", spark);
-document.addEventListener("click", spark);
+// Mouse events
+document.addEventListener("mousemove", (event) => {
+  spark(event.pageX, event.pageY);
+});
+document.addEventListener("click", (event) => {
+  spark(event.pageX, event.pageY);
+});
+
+// Touch events for mobile
+document.addEventListener("touchstart", (event) => {
+  for (let touch of event.touches) {
+    spark(touch.pageX, touch.pageY);
+  }
+});
+document.addEventListener("touchmove", (event) => {
+  for (let touch of event.touches) {
+    spark(touch.pageX, touch.pageY);
+  }
+});
+
 
