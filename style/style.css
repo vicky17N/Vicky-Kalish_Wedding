@@ -1786,24 +1786,25 @@ footer {
     outline:0!important;
 }
 /* mouse animation spark */
-.cursor-spark  {
+/* mouse animation */
+.cursor-spark {
   position: absolute;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
+  width: 6px;
+  height: 6px;
   background: #ff0873;
+  border-radius: 50%;
   pointer-events: none;
-  animation: animate 2s linear forwards;
+  animation: move-spark 4s ease-out forwards;
 }
 
-@keyframes animate {
+@keyframes move-spark {
   0% {
-    opacity: 1;
     transform: translate(0, 0);
+    opacity: 1;
   }
   100% {
+    transform: translate(var(--x), var(--y)) scale(0.5);
     opacity: 0;
-    transform: translate(var(--x), var(--y));
   }
 }
 
