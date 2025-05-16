@@ -512,45 +512,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 
-// Spark animation on mouse or touch
-function spark(x, y) {
-  let i = document.createElement("div");
-  i.className = "cursor-spark";
-  i.style.left = x + "px";
-  i.style.top = y + "px";
-  i.style.transform = `scale(${Math.random() * 2 + 1})`;
-  i.style.setProperty("--x", getRandomTransitionValue());
-  i.style.setProperty("--y", getRandomTransitionValue());
 
-  document.body.appendChild(i);
-  setTimeout(() => {
-    document.body.removeChild(i);
-  }, 4000);
-}
-
-function getRandomTransitionValue() {
-  return `${Math.random() * 400 - 200}px`;
-}
-
-// Mouse events
-document.addEventListener("mousemove", (event) => {
-  spark(event.pageX, event.pageY);
-});
-document.addEventListener("click", (event) => {
-  spark(event.pageX, event.pageY);
-});
-
-// Touch events for mobile
-document.addEventListener("touchstart", (event) => {
-  for (let touch of event.touches) {
-    spark(touch.pageX, touch.pageY);
-  }
-});
-document.addEventListener("touchmove", (event) => {
-  for (let touch of event.touches) {
-    spark(touch.pageX, touch.pageY);
-  }
-});
 
 
 
