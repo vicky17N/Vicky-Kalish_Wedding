@@ -841,7 +841,7 @@ h1:hover, h4:hover, p:hover {
 
 @media (min-width: 992px) {
   .home .couple #Kalishwari {
-    height: 260px; /* Default height for larger screens */
+    height: 300px; /* Default height for larger screens */
   }
 }
 
