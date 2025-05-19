@@ -794,12 +794,12 @@ h1:hover, h4:hover, p:hover {
   filter: saturate(1);
 }
 
-.home .couple #Kalishwari {
+/* .home .couple #Kalishwari {
   width: 100%;
   height: 300px;
   object-fit: cover;
   filter: saturate(1);
-}
+} */
 
 .home .heart {
   width: 50px;
@@ -819,32 +819,32 @@ h1:hover, h4:hover, p:hover {
   color: var(--pink);
 }
 
-@media (max-width: 575.98px) {
+/* @media (max-width: 575.98px) {
   .home .couple #Kalishwari {
-    height: 200px; /* Adjust height for smaller screens */
+    height: 200px;
   }
 }
 
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .home .couple #Kalishwari {
-    height: 220px; /* Slightly larger height for tablets */
+    height: 220px;
   }
 }
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .home .couple #Kalishwari {
-    height: 240px; /* Adjust height for medium devices */
+    height: 240px; 
   }
 }
 
 @media (min-width: 992px) {
   .home .couple #Kalishwari {
-    height: 300px; /* Default height for larger screens */
+    height: 300px; 
   }
 }
-
+ */
 /* Home end------------------------------------------------------------------------------------------------- */
 
 
