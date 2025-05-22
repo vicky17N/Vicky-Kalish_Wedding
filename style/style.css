@@ -1501,7 +1501,10 @@ footer {
   }
 
   .simply-countdown > .simply-section .simply-amount {
-    padding: 70px;
+    font-size: 40px;
+    padding: 25px;
+    margin: 3px;
+    z-index: 1;
   }
 
   .timeline::before {
@@ -1545,8 +1548,10 @@ footer {
   }
 
   .simply-countdown > .simply-section .simply-amount {
-    padding: 60px;
-    margin: 5px;
+   font-size: 40px;
+    padding: 25px;
+    margin: 3px;
+    z-index: 1;
   }
 
   .mynavbar .offcanvas-title {
