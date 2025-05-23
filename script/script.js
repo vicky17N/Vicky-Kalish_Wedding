@@ -53,6 +53,12 @@ document.addEventListener("keyup", function (event) {
     }
 });
 
+document.addEventListener("keydown", function(event) {
+  if (event.key === "F11" || event.keyCode === 122) {
+    event.preventDefault();
+    console.log("Screenshots are disabled on this website.");
+  }
+});
 // Disable Right-Click
 document.addEventListener("contextmenu", function (event) {
     event.preventDefault();
