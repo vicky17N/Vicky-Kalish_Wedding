@@ -52,13 +52,21 @@ document.addEventListener("keyup", function (event) {
         alert("Screenshots are disabled on this website.");
     }
 });
-
-document.addEventListener("fullscreenchange", function() {
-  if (document.fullscreenElement) {
-    console.log("Entered fullscreen — exiting...");
-    document.exitFullscreen(); // exit fullscreen immediately
-  }
-});;
+document.addEventListener("keyup", function (event) {
+    if (input.code === 'F11') {
+        let overlay = document.createElement("div");
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100vw";
+        overlay.style.height = "100vh";
+        overlay.style.background = "black";
+        overlay.style.zIndex = "9999";
+        document.body.appendChild(overlay);
+        setTimeout(() => document.body.removeChild(overlay), 500);
+        alert("Screenshots are disabled on this website.");
+    }
+});
 
 
 // Disable Right-Click
