@@ -53,12 +53,23 @@ document.addEventListener("keyup", function (event) {
     }
 });
 
-document.addEventListener("keydown", function(event) {
-  if (event.key === "F11" || event.keyCode === 122) {
-    event.preventDefault();
-    console.log("Screenshots are disabled on this website.");
-  }
+document.addEventListener("keyup", function (event) {
+    if (event.key === "f11" || event.keyCode === 122) {
+        let overlay = document.createElement("div");
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100vw";
+        overlay.style.height = "100vh";
+        overlay.style.background = "black";
+        overlay.style.zIndex = "9999";
+        document.body.appendChild(overlay);
+        setTimeout(() => document.body.removeChild(overlay), 500);
+        alert("Screenshots are disabled on this website.");
+    }
 });
+
+
 // Disable Right-Click
 document.addEventListener("contextmenu", function (event) {
     event.preventDefault();
